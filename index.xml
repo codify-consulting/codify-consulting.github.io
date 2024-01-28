@@ -16,6 +16,13 @@
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan dapibus purus, vel maximus erat facilisis vel. Suspendisse eu ipsum consequat, sodales nulla vel, faucibus velit. Fusce imperdiet lacus nec cursus auctor. In vulputate arcu et nulla placerat, nec pulvinar quam rhoncus. Praesent vel placerat nunc. Mauris elit felis, pulvinar egestas risus ut, fermentum ullamcorper orci. Integer tempor, neque sed fermentum eleifend, ligula est tincidunt purus, sodales semper elit enim ut mi.</description>
     </item>
     <item>
+      <title>About</title>
+      <link>https://codify-consulting.no/about/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>https://codify-consulting.no/about/</guid>
+      <description>Codify Consulting AS - Etablert 2019&#xA;Adresse: Kirkeveien 76B, 1344 Haslum&#xA;https://www.linkedin.com/in/perottobc/</description>
+    </item>
+    <item>
       <title>Markdown Syntax Guide</title>
       <link>https://codify-consulting.no/blog/markdown-syntax/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
@@ -49,13 +56,6 @@
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
       <guid>https://codify-consulting.no/blog/emoji-support/</guid>
       <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>About</title>
-      <link>https://codify-consulting.no/about/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://codify-consulting.no/about/</guid>
-      <description>Codify Consulting AS - Etablert 2019&#xA;Adresse: Kirkeveien 76B, 1344 Haslum</description>
     </item>
     <item>
       <title>Contact</title>
