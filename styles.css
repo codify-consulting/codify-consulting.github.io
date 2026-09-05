@@ -1,0 +1,399 @@
+:root {
+  --ink: #111820;
+  --paper: #f4f0e8;
+  --paper-light: #fbfaf7;
+  --cobalt: #3157d5;
+  --steel: #5f6c7a;
+  --line: rgba(17, 24, 32, 0.17);
+  --display: "Avenir Next", "Segoe UI", Helvetica, Arial, sans-serif;
+  --body: Inter, "Helvetica Neue", Arial, sans-serif;
+  --mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper-light);
+  font-family: var(--body);
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:focus-visible {
+  outline: 3px solid #7c9aff;
+  outline-offset: 4px;
+}
+
+.skip-link {
+  position: fixed;
+  z-index: 100;
+  top: 12px;
+  left: 12px;
+  padding: 9px 14px;
+  color: white;
+  background: var(--cobalt);
+  transform: translateY(-160%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.shell {
+  width: min(calc(100% - 48px), 1120px);
+  margin-inline: auto;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 82px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 7px;
+  font-family: var(--display);
+}
+
+.brand strong {
+  font-size: 20px;
+  letter-spacing: -0.04em;
+}
+
+.brand span {
+  color: var(--steel);
+  font-family: var(--mono);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+nav a,
+.contact-links a {
+  transition: color 160ms ease;
+}
+
+nav a:hover,
+.contact-links a:hover {
+  color: var(--cobalt);
+}
+
+.hero {
+  background: var(--paper);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.6fr);
+  min-height: min(760px, calc(100svh - 82px));
+  align-items: center;
+  gap: clamp(70px, 11vw, 150px);
+  padding-block: clamp(82px, 11vw, 142px);
+}
+
+.hero-copy,
+.facts {
+  min-width: 0;
+}
+
+.eyebrow {
+  margin: 0 0 24px;
+  color: var(--cobalt);
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.profile-status {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0 0 24px;
+  color: var(--steel);
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.profile-status > span:first-child {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--cobalt);
+}
+
+h1,
+h2,
+p,
+dl,
+dd {
+  margin-top: 0;
+}
+
+h1,
+h2 {
+  font-family: var(--display);
+}
+
+h1 {
+  max-width: 760px;
+  margin-bottom: 32px;
+  font-size: clamp(58px, 7.7vw, 104px);
+  font-weight: 650;
+  letter-spacing: -0.07em;
+  line-height: 0.92;
+}
+
+.lead {
+  max-width: 680px;
+  margin-bottom: 36px;
+  color: #34414d;
+  font-size: clamp(20px, 2vw, 24px);
+  line-height: 1.55;
+}
+
+.primary-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 30px;
+  min-height: 52px;
+  padding: 0 18px;
+  color: white;
+  background: var(--cobalt);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.facts {
+  margin: 0;
+  border-top: 1px solid var(--line);
+}
+
+.facts div {
+  padding-block: 22px;
+  border-bottom: 1px solid var(--line);
+}
+
+.facts dt {
+  margin-bottom: 5px;
+  color: var(--steel);
+  font-family: var(--mono);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.facts dd {
+  margin-left: 0;
+  font-family: var(--display);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.background {
+  padding-block: clamp(84px, 10vw, 130px);
+}
+
+.background-grid,
+.contact-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.72fr);
+  gap: clamp(70px, 12vw, 160px);
+}
+
+h2 {
+  max-width: 690px;
+  margin-bottom: 0;
+  font-size: clamp(42px, 5vw, 66px);
+  font-weight: 600;
+  letter-spacing: -0.055em;
+  line-height: 1.03;
+}
+
+.background-copy {
+  padding-top: 34px;
+  border-top: 1px solid var(--line);
+}
+
+.background-copy p {
+  color: #34414d;
+  font-size: 19px;
+}
+
+.background-copy p:last-child {
+  margin-bottom: 0;
+  color: var(--steel);
+  font-size: 15px;
+}
+
+.contact {
+  padding-block: clamp(80px, 9vw, 112px);
+  color: white;
+  background: var(--ink);
+}
+
+.eyebrow-light {
+  color: #9cb1ff;
+}
+
+.contact-grid {
+  align-items: end;
+}
+
+.contact-grid > div:last-child > p {
+  margin-bottom: 25px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 18px;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.contact-links a {
+  display: inline-flex;
+  justify-content: space-between;
+  min-width: 148px;
+  padding: 13px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.contact-links a:hover {
+  color: white;
+  border-color: white;
+}
+
+.contact-links span {
+  color: #9cb1ff;
+}
+
+.site-footer {
+  padding-block: 30px;
+  color: rgba(255, 255, 255, 0.55);
+  background: var(--ink);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.site-footer p {
+  margin-bottom: 0;
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 780px) {
+  .shell {
+    width: min(calc(100% - 32px), 1120px);
+  }
+
+  .header-inner {
+    min-height: 70px;
+  }
+
+  nav {
+    gap: 18px;
+    font-size: 12px;
+  }
+
+  .hero-grid {
+    grid-template-columns: minmax(0, 1fr);
+    min-height: auto;
+    gap: 64px;
+    padding-block: 70px 82px;
+  }
+
+  h1 {
+    font-size: clamp(48px, 13vw, 64px);
+  }
+
+  .lead {
+    font-size: 18px;
+  }
+
+  .background-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+
+  .background-copy {
+    padding-top: 27px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    gap: 9px;
+  }
+}
+
+@media (max-width: 430px) {
+  .brand {
+    gap: 5px;
+  }
+
+  .brand strong {
+    font-size: 18px;
+  }
+
+  .brand span {
+    font-size: 8px;
+  }
+
+  nav a:first-child {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  * {
+    transition-duration: 0.01ms !important;
+  }
+}
